@@ -1,0 +1,7 @@
+<h3>type in the postID of the post you want to view</h3>
+<form action="./readSpecific" method="post" class="form">
+  <input type="hidden" name="_csrf" value={{csrfToken}}>
+  <label class="label" for="postID">postID:</label><br>
+  <input type="number" name="postID"  value="" ><br>
+  <input class="label" type="submit" value="Read Specific">
+</form>

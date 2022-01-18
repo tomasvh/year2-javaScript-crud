@@ -1,0 +1,18 @@
+<h3>Are you sure you want to delete this snippet?</h3>
+{{#if viewData}}
+<form action="./deleteDatabase" method="post" class="form">
+  <input type="hidden" name="_csrf" value={{csrfToken}}>
+  <label class="label" for="postID">postID:</label><br>
+  <input type="number" name="postID" readonly="readonly" value={{viewData.postID}}><br>
+  <label class="label" for="username">Username:</label><br>
+  <input type="text" name="userName" readonly="readonly" value={{viewData.userName}}><br>
+  <label class="label" for="snippet">Snippet:</label><br>
+  <textarea name="snippet" rows="10" cols="200" readonly="readonly">
+    {{viewData.snippet}}
+  </textarea><br><br>
+  <input type="submit" value="Delete">
+</form>
+<form action="./read" method="get" class="form">
+  <input type="submit" value="Cancel">
+</form>
+{{/if}}

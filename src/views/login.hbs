@@ -1,0 +1,9 @@
+<h3>Please log in using your credentials</h3>
+<form action="./login" method="post" class="form">
+  <input type="hidden" name="_csrf" value={{csrfToken}}>
+  <label class="label" for="username">Username:</label><br>
+  <input type="text" name="userName" value=""><br>
+  <label class="label" for="lname">Password:</label><br>
+  <input type="password" name="password"><br><br>
+  <input type="submit" value="Login">
+</form>

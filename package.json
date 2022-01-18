@@ -1,0 +1,52 @@
+{
+  "name": "assignment-2-crud-snippets",
+  "version": "1.0.0",
+  "description": "A CRUD application for code snippets using node, express, handlebars and mongodb.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "start:dev": "nodemon --inspect -r dotenv/config src/server.js",
+    "lint": "npx eslint ./src || exit 0",
+    "lint:fix": "npx eslint ./src --fix || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.lnu.se:1dv023/student/tendn09/assignment-2-crud-snippets.git"
+  },
+  "author": "Tomas Marx-Raacz von Hidvég, tendn09@student.lnu.se, tomas.v.hidveg@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "chalk": "^3.0.0",
+    "connect-mongo": "^4.4.1",
+    "csurf": "^1.11.0",
+    "express": "^4.17.1",
+    "express-hbs": "^2.4.0",
+    "express-session": "^1.17.2",
+    "helmet": "^4.6.0",
+    "http-errors": "^1.7.3",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.1.2",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^31.6.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "nodemon": "^2.0.12"
+  },
+  "eslintConfig": {
+    "extends": "@lnu"
+  },
+  "nodemonConfig": {
+    "restarable": "rs",
+    "ext": "js, json, hbs, html, css"
+  }
+}

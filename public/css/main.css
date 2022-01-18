@@ -1,0 +1,44 @@
+h1 {
+  color: #ab0000;
+  font-size: 40px;
+}
+
+h2, h3, h4 {
+  color: #0000d2;
+  font-size: 32px;
+}
+
+.label {
+  color: white
+}
+
+p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  word-spacing: 1.5;
+}
+
+body {
+  font-family: Arial;
+  background-color: black;
+  background-size: cover;
+  text-align: center;
+  border-radius: 25px;
+  margin: auto;
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  margin: auto;
+}
+
+a {
+  font-size: 16px;
+}
+
+div {
+  display: block;
+}

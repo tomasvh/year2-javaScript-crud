@@ -1,0 +1,15 @@
+<h3>Update snippet:</h3>
+{{#if viewData}}
+<form action="./updateDatabase" method="post" class="form">
+  <input type="hidden" name="_csrf" value={{csrfToken}}>
+  <label class="label" for="postID">postID:</label><br>
+  <input type="number" name="postID" readonly="readonly" value={{viewData.postID}}><br>
+  <label class="label" for="username">Username:</label><br>
+  <input type="text" name="userName" readonly="readonly" value={{viewData.userName}}><br>
+  <label class="label" for="snippet">Snippet:</label><br>
+  <textarea name="snippet" rows="10" cols="200">
+    {{viewData.snippet}}
+  </textarea><br><br>
+  <input type="submit" value="Update">
+</form>
+{{/if}}

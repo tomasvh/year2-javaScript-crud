@@ -1,0 +1,37 @@
+<header>
+  <div>
+    <h1>Tomas Wonderful CRUD app...</h1>
+  </div>
+  <nav class="navbar">
+    <div class="link-list">
+      <ul class="nav-ul">
+        {{#if loggedIn}}
+        <li class="nav-item">
+          <a class="nav-link" href="./">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./read/">Read</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./create/">Create</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./logout/">Log out</a>
+        {{else}}
+        <li class="nav-item">
+          <a class="nav-link" href="./">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./read/">Read</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./register/">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./login/">Login</a>
+        </li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
+</header>

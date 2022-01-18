@@ -1,0 +1,16 @@
+<h3>Here you can read a specific post according to postID number</h3>
+<form action="./readSpecific" method="get" class="form">
+  <input type="hidden" name="_csrf" value={{csrfToken}}>
+  <input type="submit" value="Read Specific ID">
+</form>
+<br>
+<h3>Here you can view all from a specific user</h3>
+<form action="./readSpecificUserAll" method="get" class="form">
+  <input type="hidden" name="_csrf" value={{csrfToken}}>
+  <input type="submit" value="Read posts from specific user">
+</form>
+<h3>Here you can read everything</h3>
+<form action="./readAll" method="get" class="form">
+  <input type="hidden" name="_csrf" value={{csrfToken}}>
+  <input type="submit" value="Read All">
+</form>

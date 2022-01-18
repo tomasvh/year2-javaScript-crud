@@ -1,0 +1,7 @@
+<h3>type in the Username of the user whose snippets you want to view</h3>
+<form action="./readSpecificUserAll" method="post" class="form">
+  <input type="hidden" name="_csrf" value={{csrfToken}}>
+  <label class="label" for="userName">Username:</label><br>
+  <input type="text" name="userName" value="" ><br>
+  <input type="submit" value="Read snippets from specific user">
+</form>

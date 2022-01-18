@@ -1,0 +1,9 @@
+# ignore packages installed by npm
+node_modules
+
+# ignore serverScripts folder
+serverScripts
+# ignore .env
+.env
+
+.conf

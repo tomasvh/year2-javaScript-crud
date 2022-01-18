@@ -1,0 +1,19 @@
+<div class="snippet">
+  <form action="./updateSnippet" method="post" class="form">
+    <input type="hidden" name="_csrf" value={{csrfToken}}>
+    <label for="postID">postID:</label><input type="number" id="postID" name="postID" readonly="readonly" value={{postID}}><br>
+    <label for="userName">Username:</label><input type="text" id="userName" name="userName" readonly="readonly" value={{userName}}><br>
+    <label for="snippet">Snippet: </label><textarea name="snippet" id="snippet" rows="10" cols="200" readonly="readonly">{{snippet}}</textarea>
+    <br>
+    <input type="submit" value="Update">
+  </form>
+    <form action="./deleteSnippet" method="post" class="form">
+      <input type="hidden" name="_csrf" value={{csrfToken}}>
+      <label for="postID" hidden></label><input hidden type="number" id="postID" name="postID" readonly="readonly" value={{postID}}>
+      <label for={"userName" hidden></label><input hidden type="text" id="userName" name="userName" readonly="readonly" value={{userName}}>
+      <label for="snippet" hidden></label><textarea hidden id="snippet" name="snippet" rows="10" cols="200" readonly="readonly">
+      {{snippet}}
+    </textarea>
+      <input type="submit" value="Delete">
+    </form>
+</div>

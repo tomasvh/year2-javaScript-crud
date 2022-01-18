@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <base href="{{baseURL}}"/>
+    <title>1dv023 - tendn09 CRUD app!</title>
+    <link rel="stylesheet" type="text/css" href="{{baseURL}}css/main.css" />
+  </head>
+  <body>
+    {{>header}}
+    <div class="container">
+      {{#if flash}}
+      {{>flash}}
+      {{/if}}
+      {{{body}}}
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    {{>footer}}
+  </body>
+</html>
